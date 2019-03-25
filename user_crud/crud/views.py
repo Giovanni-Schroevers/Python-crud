@@ -84,7 +84,6 @@ def update_user(request, id):
 
 
 def delete_user(request, id):
-
     try:
         if User.objects.filter(id=id).count() > 0:
             User.objects.filter(id=id).delete()
